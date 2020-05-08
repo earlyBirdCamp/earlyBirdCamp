@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "action": "ts-node action.ts"
+  },
+  "dependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "prettier": "^2.0.5"
+  }
+}
