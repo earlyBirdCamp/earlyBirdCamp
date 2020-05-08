@@ -11,6 +11,8 @@ jobs:
       - name: Install Dependencies
         run: yarn -p
       - name: Run Action
+        env:
+          LEARN_GH_TOKEN: ${{ secrets.LEARN_GH_TOKEN }}
         run: yarn run action
       - uses: mikeal/publish-to-github-action@master
         env:
