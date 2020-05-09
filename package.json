@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "action": "ts-node --skip-project scripts/action.ts"
+    "action": "ts-node --skip-project scripts/action.ts",
+    "start": "next"
   },
   "dependencies": {
     "ts-node": "^8.10.1",
@@ -23,6 +24,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-use": "^14.2.0",
+    "swr": "^0.2.0",
     "tailwindcss": "^1.4.6"
   }
 }

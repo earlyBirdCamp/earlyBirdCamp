@@ -21,6 +21,9 @@ export default () => {
         updateUserInfo(
           JSON.stringify(pick(data, ['login', 'id', 'name', 'email'])),
         );
+
+        // TODO: 处理 page 里 cookie 的同步问题
+        location.reload();
       }
     })();
   }, []);

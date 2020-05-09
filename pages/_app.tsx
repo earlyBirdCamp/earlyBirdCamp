@@ -8,7 +8,9 @@ class MyApp extends App {
     return (
       <div>
         <h1>EarlyBirdCamp</h1>
+        <br />
         <hr />
+        <br />
         <Component {...pageProps} />
       </div>
     );
