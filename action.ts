@@ -38,7 +38,7 @@ async function getData() {
   });
   members.forEach((member) => {
     const { login: name } = member;
-    // 备用管理员
+    // 当 sorrycc 被踢的时候，启用备用管理员，不算在 member 里
     if (name === 'yuelechen') return;
     if (!findMember(data.members, name)) {
       data.members.push({
@@ -67,21 +67,23 @@ async function getData() {
   console.log('total:', issues.length);
   console.log();
 
-  // 一天减 1 滴 HP
+  // HP 计算
   console.log('HP:');
   data.members.forEach((member) => {
     const days = dayDiff(member.joined_at);
+    // 一天减 1 滴 HP
     member.hp = INITIAL_HP - days;
 
     const articles = memberArticles[member.name] || [];
     member.articles = articles;
+    // 每篇文章加 7 滴 HP
     member.hp += articles.length * 7;
     console.log(
       `[${member.name}] 14 + 7 * ${articles.length} - ${days} = ${member.hp}`,
     );
 
+    // TODO: HP 减为 0 时，移出 org
     if (member.hp <= 0) {
-      // TODO: block
     }
   });
   console.log();
