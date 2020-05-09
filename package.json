@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "action": "ts-node action.ts"
+    "action": "ts-node scripts/action.ts"
   },
   "dependencies": {
     "ts-node": "^8.10.1",

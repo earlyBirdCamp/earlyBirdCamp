@@ -20,16 +20,16 @@ interface Data {
 const INITIAL_HP = 14;
 const DAY_TIME = 24 * 60 * 60 * 1000;
 const now = new Date();
-const pathToData = join(__dirname, 'data', fileString(now)) + '.json';
-const pathToLatestData = join(__dirname, 'data', 'latest.json');
+const pathToData = join(__dirname, '..', 'data', fileString(now)) + '.json';
+const pathToLatestData = join(__dirname, '..', 'data', 'latest.json');
 
 const octokit = new Octokit({
   auth: process.env.LEARN_GH_TOKEN,
-  userAgent: 'learnfetogether',
+  userAgent: 'earlyBirdCamp',
 });
 
 async function getData() {
-  const org = 'learnfetogether';
+  const org = 'earlyBirdCamp';
   const data: Data = JSON.parse(readFileSync(pathToLatestData, 'utf-8'));
 
   // 补充新增的 member
