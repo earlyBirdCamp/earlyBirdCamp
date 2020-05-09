@@ -1,9 +1,10 @@
 import React from 'react';
+import UserInfo from '../components/UserInfo/UserInfo';
 
 export default () => {
   return (
     <div>
-      <button className="btn btn-blue btn-blue-hover">通过 Github 登录</button>
+      <UserInfo />
     </div>
   );
 };
