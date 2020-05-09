@@ -11,6 +11,23 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
-    "declaration": true
-  }
+    "declaration": false,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

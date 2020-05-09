@@ -8,8 +8,17 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@octokit/rest": "latest",
     "@types/node": "^13.13.5",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "autoprefixer": "^9.7.6",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.3.6",
+    "postcss-import": "^12.0.1",
     "prettier": "^2.0.5",
-    "@octokit/rest": "latest"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.4.6"
   }
 }
