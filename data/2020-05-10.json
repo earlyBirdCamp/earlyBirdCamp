@@ -525,6 +525,12 @@
       "hp": 14,
       "articles": [],
       "joined_at": 1589152886833
+    },
+    {
+      "name": "wchat",
+      "hp": 14,
+      "articles": [],
+      "joined_at": 1589154093754
     }
   ]
 }
