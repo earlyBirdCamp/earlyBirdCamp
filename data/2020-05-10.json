@@ -265,8 +265,9 @@
     },
     {
       "name": "fangkyi03",
-      "hp": 21,
+      "hp": 28,
       "articles": [
+        6,
         4
       ],
       "joined_at": 1589116298523
@@ -399,8 +400,11 @@
     },
     {
       "name": "tolerance-go",
-      "hp": 14,
-      "articles": [],
+      "hp": 28,
+      "articles": [
+        7,
+        5
+      ],
       "joined_at": 1589119625272
     },
     {
