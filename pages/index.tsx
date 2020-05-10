@@ -48,16 +48,16 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="text-center my-8">
-        <div className="bg-yellow-400 text-3xl font-bold text-red-900 mb-4">
-          今天加入的人较多，被 GitHub 限制邀请了，感兴趣的同学请明天再试。
-        </div>
-        <img
-          src="https://img.alicdn.com/tfs/TB1wmcdFy_1gK0jSZFqXXcpaXXa-566-328.png"
-          width="400"
-          className="inline-block"
-        />
-      </div>
+      {/*<div className="text-center my-8">*/}
+      {/*  <div className="bg-yellow-400 text-3xl font-bold text-red-900 mb-4">*/}
+      {/*    今天加入的人较多，被 GitHub 限制邀请了，感兴趣的同学请明天再试。*/}
+      {/*  </div>*/}
+      {/*  <img*/}
+      {/*    src="https://img.alicdn.com/tfs/TB1wmcdFy_1gK0jSZFqXXcpaXXa-566-328.png"*/}
+      {/*    width="400"*/}
+      {/*    className="inline-block"*/}
+      {/*  />*/}
+      {/*</div>*/}
       {members.length === 0 ? (
         <div className="text-center font-bold mt-8 text-orange-700">
           Loading...
