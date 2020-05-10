@@ -166,7 +166,7 @@ export default (props: { members: any[] }) => {
             >
               文章区
             </a>
-            开始写文章
+            开始写文章（FAQ：如遇 404 错误，先接受邀请）
             <br />
             4. 扫码添加 UmiJS 小助手，并回复 <strong>earlyBirdCamp</strong>{' '}
             加交流群
