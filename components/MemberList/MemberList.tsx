@@ -8,14 +8,14 @@ export default (props: { members: any[] }) => {
     userInfo && userInfo !== 'undefined' ? JSON.parse(userInfo) : {};
 
   return (
-    <div className="my-8 flex flex-col content-center flex-wrap">
+    <div className="py-8 flex flex-col content-center flex-wrap bg-blue-100 shadow-inner">
       <div className="text-gray-700 lg:w-1/2 sm:w-3/4">
         <h2 className="text-xl mb-3">成员列表（TOP 100）</h2>
         <div>
           <div className="mb-2 flex flex-wrap flex-row font-bold text-gray-500">
-            <div className="flex-1">成员</div>
+            <div className="flex-1">Github 信息</div>
             <div className="w-20 text-right">HP</div>
-            <div className="w-32 text-right">加入时间</div>
+            <div className="w-40 text-right">加入时间</div>
             <div className="w-20 text-right">文章数</div>
           </div>
           {props.members
@@ -44,7 +44,7 @@ export default (props: { members: any[] }) => {
                     ) : null}
                   </div>
                   <div className="w-20 text-right">{member.hp}</div>
-                  <div className="w-32 text-right">
+                  <div className="w-40 text-right">
                     {format(member.joined_at)}
                   </div>
                   <div className="w-20 text-right">

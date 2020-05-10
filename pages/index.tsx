@@ -17,7 +17,7 @@ export default () => {
 
   return (
     <div>
-      <div className="flex flex-col content-center flex-wrap mt-4 mb-2">
+      <div className="flex flex-col content-center flex-wrap mb-2">
         <div className="flex flex-col content-center flex-wrap">
           <img
             src="https://img.alicdn.com/tfs/TB1cCrxFCf2gK0jSZFPXXXsopXa-289-285.jpg"
@@ -25,7 +25,7 @@ export default () => {
           />
         </div>
         <div className="text-center text-3xl font-sans my-5">
-          Early Bird Camp（早鸟营）
+          EarlyBirdCamp（早鸟营）
         </div>
       </div>
       <div className="flex flex-col content-center flex-wrap">
@@ -37,7 +37,7 @@ export default () => {
           >
             “有趣”的类游戏规则
           </a>
-          逼大家养成每周写一篇前端文章的习惯，目前已有{' '}
+          逼自己养成每周写一篇前端文章的习惯，目前已有{' '}
           <strong className="text-orange-700">{members.length || '...'}</strong>{' '}
           人加入（起步阶段，暂限 100 人）。
           <strong>初始 HP 为 14，每写一篇 +7，每天 -1，HP 为 0 时退群。</strong>
@@ -49,10 +49,10 @@ export default () => {
           Loading...
         </div>
       ) : (
-        <div>
+        <>
           <UserInfo members={members} />
           <MemberList members={members} />
-        </div>
+        </>
       )}
     </div>
   );

@@ -151,7 +151,7 @@ export default (props: { members: any[] }) => {
             </a>{' '}
             接受邀请，接受后才算正式加入，并开始计时扣 HP
             <br />
-            1. 阅读
+            2. 阅读
             <a
               href="https://github.com/earlyBirdCamp/earlyBirdCamp/issues/1"
               target="_blank"
@@ -159,7 +159,7 @@ export default (props: { members: any[] }) => {
               《早鸟营详细规则》
             </a>
             <br />
-            1. 访问
+            3. 访问
             <a
               href="https://github.com/earlyBirdCamp/articles/issues"
               target="_blank"
@@ -168,7 +168,8 @@ export default (props: { members: any[] }) => {
             </a>
             开始写文章
             <br />
-            1. 扫码添加 UmiJS 小助手，并回复 <strong>earlyBirdCamp</strong> 加群
+            4. 扫码添加 UmiJS 小助手，并回复 <strong>earlyBirdCamp</strong>{' '}
+            加交流群
             <img
               src="https://img.alicdn.com/tfs/TB1pd1ce8r0gK0jSZFnXXbRRXXa-430-430.jpg"
               width="100"
