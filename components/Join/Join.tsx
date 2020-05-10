@@ -20,33 +20,6 @@ export default () => {
     return null;
   }
 
-  async function joinHandler() {
-    setLoading(true);
-
-    setStatus('检查是否已加入...');
-    const {
-      data: { exists, membersCount },
-    } = await jsonFetch('/api/github/memberStatus');
-    if (exists) {
-      setStatus('加入失败，你已是该组织成员。');
-      setLoading(false);
-      return;
-    }
-
-    setStatus('检查成员数...');
-    await delay(800);
-    if (membersCount > MEMBER_COUNT_LIMIT) {
-      setStatus('加入失败，成员暂时已满。');
-      setLoading(false);
-      return;
-    }
-
-    setStatus('尝试加入...');
-    const { data: jsonStatus } = await jsonFetch('/api/github/join');
-    setStatus(jsonStatus ? '加入成功' : '加入失败');
-    setLoading(false);
-  }
-
   return (
     <div>
       <h2>JOIN</h2>

@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch';
 import { useCookie } from 'react-use';
 
 export default () => {
-  const [state, setState] = useState('Login...');
+  const [state, setState] = useState('正在登录早鸟营...');
   const [token, updateToken] = useCookie('gh_access_token');
 
   useEffect(() => {

@@ -1,42 +1,60 @@
-import useSWR from 'swr';
-import fetch from 'isomorphic-unfetch';
+import React from 'react';
 import { useCookie } from 'react-use';
+import { format } from 'timeago.js';
 
-function fetcher(url: string) {
-  return fetch(url).then((res) => res.json());
-}
-
-export default () => {
-  const { data, error } = useSWR('/api/members/list', fetcher);
-
+export default (props: { members: any[] }) => {
   const [userInfo] = useCookie('gh_user_info');
-  const name = userInfo ? JSON.parse(userInfo).login : '';
-
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  const userInfoObj =
+    userInfo && userInfo !== 'undefined' ? JSON.parse(userInfo) : {};
 
   return (
-    <div>
-      <h2>Member List</h2>
-      <ul>
-        {data.map((member: any) => {
-          return (
-            <li
-              key={member.name}
-              className={member.name === name ? 'bg-orange-300' : ''}
-            >
-              <span className="mr-4 inline-block">name: {member.name}</span>
-              <span className="mr-4 inline-block">hp: {member.hp}</span>
-              <span className="mr-4 inline-block">
-                joined_at: {member.joined_at}
-              </span>
-              <span className="mr-4 inline-block">
-                articles: {member.articles.length}
-              </span>
-            </li>
-          );
-        })}
-      </ul>
+    <div className="my-8 flex flex-col content-center flex-wrap">
+      <div className="text-gray-700 lg:w-1/2 sm:w-3/4">
+        <h2 className="text-xl mb-3">成员列表（TOP 100）</h2>
+        <div>
+          <div className="mb-2 flex flex-wrap flex-row font-bold text-gray-500">
+            <div className="flex-1">成员</div>
+            <div className="w-20 text-right">HP</div>
+            <div className="w-32 text-right">加入时间</div>
+            <div className="w-20 text-right">文章数</div>
+          </div>
+          {props.members
+            .sort((a, b) => {
+              return a.hp > b.hp ? -1 : 1;
+            })
+            .slice(0, 100)
+            .map((member: any, index) => {
+              const itsYou = member.name === userInfoObj.login;
+              return (
+                <div
+                  key={member.name}
+                  className={`mb-1 flex flex-wrap flex-row ${
+                    itsYou ? 'bg-gray-300' : ''
+                  }`}
+                >
+                  <div className="flex-1">
+                    <a
+                      href={`https://github.com/${member.name}`}
+                      target="_blank"
+                    >
+                      {member.name}
+                    </a>
+                    {itsYou ? (
+                      <span className="ml-2 text-red-500">← 这是你</span>
+                    ) : null}
+                  </div>
+                  <div className="w-20 text-right">{member.hp}</div>
+                  <div className="w-32 text-right">
+                    {format(member.joined_at)}
+                  </div>
+                  <div className="w-20 text-right">
+                    {member.articles.length}
+                  </div>
+                </div>
+              );
+            })}
+        </div>
+      </div>
     </div>
   );
 };
