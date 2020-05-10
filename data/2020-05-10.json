@@ -55,7 +55,7 @@
     },
     {
       "name": "ShawDanon",
-      "hp": 13,
+      "hp": 12,
       "articles": [],
       "joined_at": 1588953696999
     },
@@ -402,12 +402,8 @@
     },
     {
       "name": "tolerance-go",
-      "hp": 35,
-      "articles": [
-        8,
-        7,
-        5
-      ],
+      "hp": 14,
+      "articles": [],
       "joined_at": 1589119625272
     },
     {
