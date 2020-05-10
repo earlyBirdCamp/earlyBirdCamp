@@ -8,40 +8,44 @@ export default () => {
 
   useEffect(() => {
     (async () => {
-      const data = await fetch(
-        'https://raw.githubusercontent.com/earlyBirdCamp/earlyBirdCamp/master/data/latest.json',
-      ).then((res) => res.json());
+      const data = await fetch('/api/members/list').then((res) => res.json());
       setMembers(data.members);
     })();
   }, []);
 
   return (
     <div>
-      <div className="flex flex-col content-center flex-wrap mb-2">
+      <div className="px-2">
+        <div className="flex flex-col content-center flex-wrap mb-2">
+          <div className="flex flex-col content-center flex-wrap">
+            <img
+              src="https://img.alicdn.com/tfs/TB1cCrxFCf2gK0jSZFPXXXsopXa-289-285.jpg"
+              width="100"
+            />
+          </div>
+          <div className="text-center text-3xl font-sans my-5">
+            EarlyBirdCamp（早鸟营）
+          </div>
+        </div>
         <div className="flex flex-col content-center flex-wrap">
-          <img
-            src="https://img.alicdn.com/tfs/TB1cCrxFCf2gK0jSZFPXXXsopXa-289-285.jpg"
-            width="100"
-          />
-        </div>
-        <div className="text-center text-3xl font-sans my-5">
-          EarlyBirdCamp（早鸟营）
-        </div>
-      </div>
-      <div className="flex flex-col content-center flex-wrap">
-        <div className="text-gray-700 lg:w-1/2 sm:w-3/4">
-          Hi！这是一个机器人管理的前端小社群，希望能通过
-          <a
-            href="https://github.com/earlyBirdCamp/earlyBirdCamp/issues/1"
-            target="_blank"
-          >
-            “有趣”的类游戏规则
-          </a>
-          逼自己养成每周写一篇前端文章的习惯，目前已有{' '}
-          <strong className="text-orange-700">{members.length || '...'}</strong>{' '}
-          人加入（起步阶段，暂限 100 人）。
-          <strong>初始 HP 为 14，每写一篇 +7，每天 -1，HP 为 0 时退群。</strong>
-          如果你和我们一样，想写文章又没人监督，不妨一试。
+          <div className="text-gray-700 lg:w-1/2 sm:w-3/4">
+            Hi！这是一个机器人管理的前端小社群，希望能通过
+            <a
+              href="https://github.com/earlyBirdCamp/earlyBirdCamp/issues/1"
+              target="_blank"
+            >
+              “有趣”的类游戏规则
+            </a>
+            逼自己养成每周写一篇前端文章的习惯，目前已有{' '}
+            <strong className="text-orange-700">
+              {members.length || '...'}
+            </strong>{' '}
+            人加入（起步阶段，暂限 100 人）。
+            <strong>
+              初始 HP 为 14，每写一篇 +7，每天 -1，HP 为 0 时退群。
+            </strong>
+            如果你和我们一样，想写文章又没人监督，不妨一试。
+          </div>
         </div>
       </div>
       {members.length === 0 ? (

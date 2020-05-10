@@ -80,7 +80,7 @@ export default (props: { members: any[] }) => {
   }
 
   return (
-    <div className="py-8">
+    <div className="py-8 px-2">
       <div className="flex flex-row content-center items-center">
         <div className="font-bold text-orange-700 flex flex-row flex-wrap content-center items-center text-center mx-auto">
           {token ? (

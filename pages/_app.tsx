@@ -7,7 +7,7 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <div className="shadow-inner pt-4">
+      <div className="shadow-inner pt-4 bg-white">
         <Head>
           <link
             rel="shortcut icon"
