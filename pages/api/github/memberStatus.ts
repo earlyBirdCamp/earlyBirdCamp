@@ -16,6 +16,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     return member.login === name;
   });
   res.status(200).json({
-    data: { exists, name },
+    data: { exists, name, membersCount: members.length },
   });
 };
