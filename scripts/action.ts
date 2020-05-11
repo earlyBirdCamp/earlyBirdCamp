@@ -93,7 +93,7 @@ async function getData() {
         articles.map(async issue_number => {
           const reactions = await octokit.paginate(octokit.reactions.listForIssue, {
             owner: org,
-            repo: org,
+            repo: 'articles',
             issue_number,
             content: '+1',
           });
