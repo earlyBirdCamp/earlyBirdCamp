@@ -324,8 +324,10 @@
     },
     {
       "name": "uploy",
-      "hp": 14,
-      "articles": [],
+      "hp": 21,
+      "articles": [
+        10
+      ],
       "joined_at": 1589117493546
     },
     {
