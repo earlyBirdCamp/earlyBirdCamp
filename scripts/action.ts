@@ -1,6 +1,7 @@
 import { join } from 'path';
 import { readFileSync, writeFileSync } from 'fs';
 import { Octokit } from '@octokit/rest';
+import dayjs from 'dayjs';
 
 type IssueId = number;
 
@@ -19,8 +20,13 @@ interface Data {
 
 const INITIAL_HP = 14;
 const DAY_TIME = 24 * 60 * 60 * 1000;
-const now = new Date();
-const pathToData = join(__dirname, '..', 'data', fileString(now)) + '.json';
+const now = dayjs();
+const pathToData = join(
+  __dirname,
+  '..',
+  'data',
+  now.format('YYYY-MM-DD') + '.json',
+);
 const pathToLatestData = join(__dirname, '..', 'data', 'latest.json');
 
 const octokit = new Octokit({
@@ -45,7 +51,7 @@ async function getData() {
         name,
         hp: 14,
         articles: [],
-        joined_at: now.getTime(),
+        joined_at: now.toDate().getTime(),
       });
     }
   });
@@ -120,5 +126,5 @@ function findMember(members: Member[], name: string) {
 }
 
 function dayDiff(date: number) {
-  return Math.floor((now.getTime() - date) / DAY_TIME);
+  return Math.floor((now.endOf('day').toDate().getTime() - date) / DAY_TIME);
 }

@@ -13,6 +13,7 @@ class MyApp extends App {
             rel="shortcut icon"
             href="https://img.alicdn.com/tfs/TB1cCrxFCf2gK0jSZFPXXXsopXa-289-285.jpg"
           />
+          <title>EarlyBirdCamp（早鸟营）</title>
         </Head>
         <Component {...pageProps} />
       </div>

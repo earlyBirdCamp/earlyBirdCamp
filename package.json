@@ -1,10 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "action": "ts-node --skip-project scripts/action.ts",
+    "action": "ts-node --project scripts/tsconfig.json scripts/action.ts",
     "start": "next"
   },
   "dependencies": {
+    "dayjs": "^1.8.26",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   },
