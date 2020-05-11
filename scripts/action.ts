@@ -75,23 +75,44 @@ async function getData() {
 
   // HP 计算
   console.log('HP:');
-  data.members.forEach((member) => {
+  await Promise.all(data.members.map(async (member) => {
     const days = dayDiff(member.joined_at);
     // 一天减 1 滴 HP
     member.hp = INITIAL_HP - days;
 
-    const articles = memberArticles[member.name] || [];
+    const articles: number[] = memberArticles[member.name] || [];
     member.articles = articles;
+
     // 每篇文章加 7 滴 HP
     member.hp += articles.length * 7;
+
+    // 👍 附加分计算
+    const votes = articles.length === 0 
+      ? 0 
+      : ((await Promise.all(
+        articles.map(async issue_number => {
+          const reactions = await octokit.paginate(octokit.reactions.listForIssue, {
+            owner: org,
+            repo: org,
+            issue_number,
+            content: '+1',
+          });
+
+          return reactions.length >= 7 ? 7 : 0;
+        })
+      )) as number[])
+      .reduce((prev, next) => prev + next);
+    // 文章 👍 7 次或以上加 7 滴 HP（一篇文章只能加一次）
+    member.hp += votes;
+
     console.log(
-      `[${member.name}] 14 + 7 * ${articles.length} - ${days} = ${member.hp}`,
+      `[${member.name}] 14 + 7 * ${articles.length} + ${votes} - ${days} = ${member.hp}`,
     );
 
     // TODO: HP 减为 0 时，移出 org
     if (member.hp <= 0) {
     }
-  });
+  }));
   console.log();
 
   return data;
