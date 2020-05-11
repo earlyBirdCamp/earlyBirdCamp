@@ -73,8 +73,10 @@
     },
     {
       "name": "Rashomon511",
-      "hp": 12,
-      "articles": [],
+      "hp": 19,
+      "articles": [
+        13
+      ],
       "joined_at": 1588988478514
     },
     {
