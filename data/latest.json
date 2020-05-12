@@ -421,8 +421,10 @@
     },
     {
       "name": "tolerance-go",
-      "hp": 12,
-      "articles": [],
+      "hp": 19,
+      "articles": [
+        22
+      ],
       "joined_at": 1589119625272
     },
     {
