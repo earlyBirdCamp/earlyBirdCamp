@@ -171,8 +171,10 @@
     },
     {
       "name": "3crazyspecial",
-      "hp": 9,
-      "articles": [],
+      "hp": 16,
+      "articles": [
+        35
+      ],
       "joined_at": 1589114506739
     },
     {
