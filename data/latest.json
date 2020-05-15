@@ -489,8 +489,9 @@
     },
     {
       "name": "songxuecc",
-      "hp": 16,
+      "hp": 23,
       "articles": [
+        32,
         27
       ],
       "joined_at": 1589124696692
