@@ -428,8 +428,9 @@
     },
     {
       "name": "tolerance-go",
-      "hp": 16,
+      "hp": 23,
       "articles": [
+        34,
         22
       ],
       "joined_at": 1589119625272
