@@ -444,8 +444,10 @@
     },
     {
       "name": "junjunsoul",
-      "hp": 8,
-      "articles": [],
+      "hp": 15,
+      "articles": [
+        36
+      ],
       "joined_at": 1589119912218
     },
     {
