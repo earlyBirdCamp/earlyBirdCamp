@@ -40,8 +40,10 @@
     },
     {
       "name": "pubuzhixing8",
-      "hp": 5,
-      "articles": [],
+      "hp": 12,
+      "articles": [
+        44
+      ],
       "joined_at": 1588952639623
     },
     {
