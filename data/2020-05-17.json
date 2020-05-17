@@ -145,8 +145,10 @@
     },
     {
       "name": "QC-L",
-      "hp": 7,
-      "articles": [],
+      "hp": 14,
+      "articles": [
+        48
+      ],
       "joined_at": 1589108840838
     },
     {
