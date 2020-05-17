@@ -402,8 +402,10 @@
     },
     {
       "name": "iShawnWang",
-      "hp": 7,
-      "articles": [],
+      "hp": 14,
+      "articles": [
+        47
+      ],
       "joined_at": 1589118712347
     },
     {
@@ -473,8 +475,10 @@
     },
     {
       "name": "Alfred-kai",
-      "hp": 7,
-      "articles": [],
+      "hp": 14,
+      "articles": [
+        46
+      ],
       "joined_at": 1589120505206
     },
     {
