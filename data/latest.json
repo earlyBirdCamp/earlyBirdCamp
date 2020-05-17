@@ -419,8 +419,10 @@
     },
     {
       "name": "brickspert",
-      "hp": 7,
-      "articles": [],
+      "hp": 14,
+      "articles": [
+        41
+      ],
       "joined_at": 1589119625272
     },
     {
