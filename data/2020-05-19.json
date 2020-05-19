@@ -487,8 +487,9 @@
     },
     {
       "name": "Alfred-kai",
-      "hp": 12,
+      "hp": 19,
       "articles": [
+        60,
         46
       ],
       "joined_at": 1589120505206
