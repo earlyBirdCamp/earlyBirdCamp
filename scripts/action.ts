@@ -39,6 +39,7 @@ async function getData() {
   const data: Data = JSON.parse(readFileSync(pathToLatestData, 'utf-8'));
 
   // 补充新增的 member
+  console.log('Get members');
   const members = await octokit.paginate(octokit.orgs.listMembers, {
     org,
   });
@@ -57,6 +58,7 @@ async function getData() {
   });
 
   // 分析文章
+  console.log('Get articles');
   const issues = await octokit.paginate(octokit.issues.listForRepo, {
     owner: org,
     repo: 'articles',
@@ -65,6 +67,13 @@ async function getData() {
   console.log('Articles:');
   const memberArticles = issues.reduce((memo, issue) => {
     const name = issue.user.login;
+    const { labels } = issue;
+
+    // WIP 阶段的文章不计分。
+    if (labels && labels.some((label) => label.name === 'WIP')) {
+      return memo;
+    }
+
     console.log(`[#${issue.number}] [${issue.user.login}] ${issue.title}`);
     if (!memo[name]) memo[name] = [];
     memo[name].push(issue.number);
