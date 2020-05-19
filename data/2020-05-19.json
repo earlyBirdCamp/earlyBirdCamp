@@ -14,8 +14,10 @@
     },
     {
       "name": "Runtu4378",
-      "hp": 3,
-      "articles": [],
+      "hp": 10,
+      "articles": [
+        54
+      ],
       "joined_at": 1588952258449
     },
     {
