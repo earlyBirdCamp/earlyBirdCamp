@@ -222,10 +222,8 @@
     },
     {
       "name": "dxc111",
-      "hp": 12,
-      "articles": [
-        12
-      ],
+      "hp": 5,
+      "articles": [],
       "joined_at": 1589115109482
     },
     {
@@ -351,10 +349,8 @@
     },
     {
       "name": "CJY0208",
-      "hp": 12,
-      "articles": [
-        56
-      ],
+      "hp": 5,
+      "articles": [],
       "joined_at": 1589117493546
     },
     {
