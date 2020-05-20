@@ -1,11 +1,11 @@
 name: Scrape Data
 on:
   schedule:
-    - cron:  '*/30 * * * *'
+    - cron:  '*/10 * * * *'
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@master
       - name: Install Dependencies
