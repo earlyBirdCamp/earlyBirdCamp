@@ -587,8 +587,10 @@
     },
     {
       "name": "btconfig",
-      "hp": 4,
-      "articles": [],
+      "hp": 11,
+      "articles": [
+        62
+      ],
       "joined_at": 1589152886833
     },
     {
