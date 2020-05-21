@@ -502,8 +502,10 @@
     },
     {
       "name": "automan-lmx",
-      "hp": 3,
-      "articles": [],
+      "hp": 10,
+      "articles": [
+        66
+      ],
       "joined_at": 1589120505206
     },
     {
