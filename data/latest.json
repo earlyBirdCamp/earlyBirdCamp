@@ -549,8 +549,10 @@
     },
     {
       "name": "boychina",
-      "hp": 3,
-      "articles": [],
+      "hp": 10,
+      "articles": [
+        67
+      ],
       "joined_at": 1589127097160
     },
     {
