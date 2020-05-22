@@ -259,8 +259,10 @@
     },
     {
       "name": "forever-chen",
-      "hp": 2,
-      "articles": [],
+      "hp": 9,
+      "articles": [
+        72
+      ],
       "joined_at": 1589115720385
     },
     {
