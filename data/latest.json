@@ -78,8 +78,9 @@
     },
     {
       "name": "xiaohuoni",
-      "hp": 8,
+      "hp": 15,
       "articles": [
+        69,
         20
       ],
       "joined_at": 1588987287110
