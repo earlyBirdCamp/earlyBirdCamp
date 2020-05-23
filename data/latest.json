@@ -172,8 +172,10 @@
     },
     {
       "name": "forl",
-      "hp": 1,
-      "articles": [],
+      "hp": 8,
+      "articles": [
+        76
+      ],
       "joined_at": 1589113289440
     },
     {
