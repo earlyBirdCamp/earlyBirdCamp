@@ -116,8 +116,10 @@
     },
     {
       "name": "soolx",
-      "hp": 1,
-      "articles": [],
+      "hp": 8,
+      "articles": [
+        77
+      ],
       "joined_at": 1589104970304
     },
     {
