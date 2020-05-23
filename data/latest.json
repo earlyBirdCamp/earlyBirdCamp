@@ -532,8 +532,10 @@
     },
     {
       "name": "tsinglemon",
-      "hp": 1,
-      "articles": [],
+      "hp": 8,
+      "articles": [
+        78
+      ],
       "joined_at": 1589123503507
     },
     {
