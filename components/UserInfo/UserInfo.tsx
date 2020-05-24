@@ -56,8 +56,13 @@ export default (props: { members: any[] }) => {
   async function joinHandler() {
     setStatus('正在检查是否已加入...');
     const {
-      data: { exists, membersCount },
+      data: { exists, blocked, membersCount },
     } = await jsonFetch('/api/github/memberStatus');
+    if (blocked) {
+      setStatus('加入失败，你已退出该组织。');
+      setJoinSuccess(true);
+      return;
+    }
     if (exists) {
       setStatus('加入失败，你已是该组织成员。');
       setJoinSuccess(true);
