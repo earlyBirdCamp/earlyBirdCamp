@@ -41,7 +41,8 @@
       "name": "lovemegowin",
       "hp": -2,
       "articles": [],
-      "joined_at": 1588952639623
+      "joined_at": 1588952639623,
+      "blocked_at": 1590288757907
     },
     {
       "name": "pubuzhixing8",
@@ -89,7 +90,8 @@
       "name": "gaowei1012",
       "hp": -1,
       "articles": [],
-      "joined_at": 1588988478514
+      "joined_at": 1588988478514,
+      "blocked_at": 1590288757907
     },
     {
       "name": "Rashomon511",
@@ -112,7 +114,8 @@
       "name": "AspirinMrmi",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589104970304
+      "joined_at": 1589104970304,
+      "blocked_at": 1590288757907
     },
     {
       "name": "soolx",
@@ -134,7 +137,8 @@
       "name": "shusheng-github",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589105517004
+      "joined_at": 1589105517004,
+      "blocked_at": 1590288757907
     },
     {
       "name": "YAN7",
@@ -172,7 +176,8 @@
       "name": "chuangwei",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589113289440
+      "joined_at": 1589113289440,
+      "blocked_at": 1590288757907
     },
     {
       "name": "forl",
@@ -194,7 +199,8 @@
       "name": "zpd106",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589113900774
+      "joined_at": 1589113900774,
+      "blocked_at": 1590288757907
     },
     {
       "name": "3crazyspecial",
@@ -239,24 +245,29 @@
       "name": "wstreet",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589114506739
+      "joined_at": 1589114506739,
+      "blocked_at": 1590288757907
     },
     {
       "name": "dxc111",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589115109482
+      "joined_at": 1589115109482,
+      "blocked_at": 1590288757907
     },
     {
       "name": "godzzh",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589115109482
+      "joined_at": 1589115109482,
+      "blocked_at": 1590288757907
     },
     {
       "name": "guimeisang",
-      "hp": 0,
-      "articles": [],
+      "hp": 7,
+      "articles": [
+        81
+      ],
       "joined_at": 1589115109482
     },
     {
@@ -287,19 +298,22 @@
       "name": "MasonTao",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589115720385
+      "joined_at": 1589115720385,
+      "blocked_at": 1590288757907
     },
     {
       "name": "SawWu",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589115720385
+      "joined_at": 1589115720385,
+      "blocked_at": 1590288757907
     },
     {
       "name": "tunoon",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589115720385
+      "joined_at": 1589115720385,
+      "blocked_at": 1590288757907
     },
     {
       "name": "WanderHuang",
@@ -313,7 +327,8 @@
       "name": "weiqinke",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589115720385
+      "joined_at": 1589115720385,
+      "blocked_at": 1590288757907
     },
     {
       "name": "AlvinMi",
@@ -327,7 +342,8 @@
       "name": "DiamondYuan",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116298523
+      "joined_at": 1589116298523,
+      "blocked_at": 1590288757907
     },
     {
       "name": "fangkyi03",
@@ -342,49 +358,57 @@
       "name": "Jerry-RL",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116298523
+      "joined_at": 1589116298523,
+      "blocked_at": 1590288757907
     },
     {
       "name": "laowhite",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116298523
+      "joined_at": 1589116298523,
+      "blocked_at": 1590288757907
     },
     {
       "name": "qinyuling",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116298523
+      "joined_at": 1589116298523,
+      "blocked_at": 1590288757907
     },
     {
       "name": "roytang1005",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116298523
+      "joined_at": 1589116298523,
+      "blocked_at": 1590288757907
     },
     {
       "name": "xiatianshitiancai",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116298523
+      "joined_at": 1589116298523,
+      "blocked_at": 1590288757907
     },
     {
       "name": "Easyobj",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589116889331
+      "joined_at": 1589116889331,
+      "blocked_at": 1590288757907
     },
     {
       "name": "CJY0208",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589117493546
+      "joined_at": 1589117493546,
+      "blocked_at": 1590288757907
     },
     {
       "name": "itellyou-com",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589117493546
+      "joined_at": 1589117493546,
+      "blocked_at": 1590288757907
     },
     {
       "name": "uploy",
@@ -406,13 +430,15 @@
       "name": "hoho2017",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589118099235
+      "joined_at": 1589118099235,
+      "blocked_at": 1590288757907
     },
     {
       "name": "JohnJiangLA",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589118099235
+      "joined_at": 1589118099235,
+      "blocked_at": 1590288757907
     },
     {
       "name": "lvbaiying",
@@ -426,13 +452,15 @@
       "name": "TtTRz",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589118099235
+      "joined_at": 1589118099235,
+      "blocked_at": 1590288757907
     },
     {
       "name": "zhangwen1932",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589118099235
+      "joined_at": 1589118099235,
+      "blocked_at": 1590288757907
     },
     {
       "name": "iShawnWang",
@@ -478,7 +506,8 @@
       "name": "JoMartinezZhu",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589119625272
+      "joined_at": 1589119625272,
+      "blocked_at": 1590288757907
     },
     {
       "name": "tolerance-go",
@@ -493,7 +522,8 @@
       "name": "iloveplus",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589119912218
+      "joined_at": 1589119912218,
+      "blocked_at": 1590288757907
     },
     {
       "name": "junjunsoul",
@@ -532,7 +562,8 @@
       "name": "RobinZhao00",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589120505206
+      "joined_at": 1589120505206,
+      "blocked_at": 1590288757907
     },
     {
       "name": "tsinglemon",
@@ -554,7 +585,8 @@
       "name": "funlee",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589124097897
+      "joined_at": 1589124097897,
+      "blocked_at": 1590288757907
     },
     {
       "name": "songxuecc",
@@ -569,7 +601,8 @@
       "name": "mrandpz",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589125892466
+      "joined_at": 1589125892466,
+      "blocked_at": 1590288757907
     },
     {
       "name": "boychina",
@@ -583,25 +616,29 @@
       "name": "Boomer2016",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589127705244
+      "joined_at": 1589127705244,
+      "blocked_at": 1590288757907
     },
     {
       "name": "d19900819",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589128304504
+      "joined_at": 1589128304504,
+      "blocked_at": 1590288757907
     },
     {
       "name": "Yunfly",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589128909471
+      "joined_at": 1589128909471,
+      "blocked_at": 1590288757907
     },
     {
       "name": "yuwancumian",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589129511162
+      "joined_at": 1589129511162,
+      "blocked_at": 1590288757907
     },
     {
       "name": "tsejx",
@@ -615,7 +652,8 @@
       "name": "leeguooooo",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589141495601
+      "joined_at": 1589141495601,
+      "blocked_at": 1590288757907
     },
     {
       "name": "btconfig",
@@ -629,19 +667,22 @@
       "name": "stonefe",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589152886833
+      "joined_at": 1589152886833,
+      "blocked_at": 1590288757907
     },
     {
       "name": "wchat",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589154093754
+      "joined_at": 1589154093754,
+      "blocked_at": 1590288757907
     },
     {
       "name": "alipay404",
       "hp": 0,
       "articles": [],
-      "joined_at": 1589154689398
+      "joined_at": 1589154689398,
+      "blocked_at": 1590288757907
     },
     {
       "name": "cathe-zhang",
