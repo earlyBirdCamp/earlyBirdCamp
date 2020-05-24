@@ -84,7 +84,7 @@ async function getData() {
 
   // HP 计算
   console.log('HP:');
-  data.members.forEach((member) => {
+  for (const member of data.members) {
     const days = dayDiff(member.joined_at);
     // 一天减 1 滴 HP
     member.hp = INITIAL_HP - days;
@@ -97,10 +97,16 @@ async function getData() {
       `[${member.name}] 14 + 7 * ${articles.length} - ${days} = ${member.hp}`,
     );
 
-    // TODO: HP 减为 0 时，移出 org
-    if (member.hp <= 0) {
+    // HP 减为 0 时，移出 org
+    if (member.hp <= 0 && !member.blocked_at) {
+      console.log(`[${member.name}] remove from org`);
+      await octokit.orgs.removeMember({
+        org,
+        username: member.name,
+      });
+      member.blocked_at = now.toDate().getTime();
     }
-  });
+  }
   console.log();
 
   return data;
@@ -117,13 +123,6 @@ getData()
   .catch((e) => {
     console.error(e);
   });
-
-function fileString(ts: Date) {
-  const year = ts.getUTCFullYear();
-  const month = (ts.getUTCMonth() + 1).toString().padStart(2, '0');
-  const day = ts.getUTCDate().toString().toString().padStart(2, '0');
-  return `${year}-${month}-${day}`;
-}
 
 function findMember(members: Member[], name: string) {
   for (const member of members) {
