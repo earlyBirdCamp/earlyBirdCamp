@@ -100,10 +100,14 @@ async function getData() {
     // HP 减为 0 时，移出 org
     if (member.hp <= 0 && !member.blocked_at) {
       console.log(`[${member.name}] remove from org`);
-      await octokit.orgs.removeMember({
-        org,
-        username: member.name,
-      });
+      try {
+        await octokit.orgs.removeMember({
+          org,
+          username: member.name,
+        });
+      } catch (e) {
+        console.error(`[${member.name}] remove from org failed: ${e}`);
+      }
       member.blocked_at = now.toDate().getTime();
     }
   }
