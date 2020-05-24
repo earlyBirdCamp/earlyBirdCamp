@@ -158,8 +158,9 @@
     },
     {
       "name": "LukerSpringtree",
-      "hp": 7,
+      "hp": 14,
       "articles": [
+        83,
         24
       ],
       "joined_at": 1589108840838
