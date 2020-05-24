@@ -319,8 +319,9 @@
     },
     {
       "name": "WanderHuang",
-      "hp": 7,
+      "hp": 14,
       "articles": [
+        87,
         38
       ],
       "joined_at": 1589115720385
@@ -546,8 +547,9 @@
     },
     {
       "name": "Alfred-kai",
-      "hp": 14,
+      "hp": 21,
       "articles": [
+        86,
         60,
         46
       ],
