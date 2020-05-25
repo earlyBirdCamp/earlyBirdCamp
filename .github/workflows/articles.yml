@@ -1,7 +1,7 @@
-name: Scrape Data
+name: Members
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '*/60 * * * *'
 jobs:
   build:
     name: Build
@@ -13,7 +13,4 @@ jobs:
       - name: Run Action
         env:
           LEARN_GH_TOKEN: ${{ secrets.LEARN_GH_TOKEN }}
-        run: yarn run action
-      - uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn run articles

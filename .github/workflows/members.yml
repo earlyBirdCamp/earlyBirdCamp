@@ -1,0 +1,19 @@
+name: Members
+on:
+  schedule:
+    - cron:  '*/10 * * * *'
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install Dependencies
+        run: yarn -p
+      - name: Run Action
+        env:
+          LEARN_GH_TOKEN: ${{ secrets.LEARN_GH_TOKEN }}
+        run: yarn run members
+      - uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

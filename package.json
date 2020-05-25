@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "action": "ts-node --project scripts/tsconfig.json scripts/action.ts",
+    "members": "ts-node --project scripts/tsconfig.json scripts/members.ts",
+    "articles": "ts-node --project scripts/tsconfig.json scripts/articles.ts",
     "start": "next"
   },
   "dependencies": {
