@@ -9,6 +9,7 @@ interface Member {
   name: string;
   hp: number;
   articles: IssueId[];
+  greatArticles: IssueId[];
   wechat_id?: string;
   joined_at: number;
   blocked_at?: number;
@@ -52,6 +53,7 @@ async function getData() {
         name,
         hp: 14,
         articles: [],
+        greatArticles: [],
         joined_at: now.toDate().getTime(),
       });
     }
@@ -75,8 +77,13 @@ async function getData() {
     }
 
     console.log(`[#${issue.number}] [${issue.user.login}] ${issue.title}`);
-    if (!memo[name]) memo[name] = [];
-    memo[name].push(issue.number);
+    if (!memo[name]) memo[name] = { articles: [], greatArticles: [] };
+    memo[name].articles.push(issue.number);
+
+    if (labels && labels.some((label) => label.name === 'HP +7')) {
+      memo[name].greatArticles.push(issue.number);
+    }
+
     return memo;
   }, {});
   console.log('total:', issues.length);
@@ -89,12 +96,16 @@ async function getData() {
     // 一天减 1 滴 HP
     member.hp = INITIAL_HP - days;
 
-    const articles = memberArticles[member.name] || [];
+    const { articles = [], greatArticles = [] } =
+      memberArticles[member.name] || {};
     member.articles = articles;
+    member.greatArticles = greatArticles;
     // 每篇文章加 7 滴 HP
     member.hp += articles.length * 7;
+    // 每篇好文再加 7 滴 HP
+    member.hp += greatArticles.length * 7;
     console.log(
-      `[${member.name}] 14 + 7 * ${articles.length} - ${days} = ${member.hp}`,
+      `[${member.name}] 14 + 7 * ${articles.length} + 7 * ${greatArticles.length} - ${days} = ${member.hp}`,
     );
 
     // HP 减为 0 时，移出 org
