@@ -55,8 +55,9 @@
     },
     {
       "name": "pubuzhixing8",
-      "hp": 2,
+      "hp": 9,
       "articles": [
+        101,
         44
       ],
       "joined_at": 1588952639623,
