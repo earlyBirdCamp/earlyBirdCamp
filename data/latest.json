@@ -683,8 +683,9 @@
     },
     {
       "name": "songxuecc",
-      "hp": 11,
+      "hp": 18,
       "articles": [
+        98,
         32,
         27
       ],
