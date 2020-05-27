@@ -84,8 +84,9 @@
     },
     {
       "name": "ShawDanon",
-      "hp": 2,
+      "hp": 9,
       "articles": [
+        99,
         65
       ],
       "joined_at": 1588953696999,
