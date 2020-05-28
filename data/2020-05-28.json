@@ -38,8 +38,9 @@
     },
     {
       "name": "ilovetochangetheworld",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        106,
         39
       ],
       "joined_at": 1588952639623,
