@@ -180,8 +180,9 @@
     },
     {
       "name": "alexPang6",
-      "hp": 3,
+      "hp": 10,
       "articles": [
+        108,
         61
       ],
       "joined_at": 1589106113882,
