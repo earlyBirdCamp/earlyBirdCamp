@@ -776,8 +776,9 @@
     },
     {
       "name": "btconfig",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        118,
         62
       ],
       "joined_at": 1589152886833,
