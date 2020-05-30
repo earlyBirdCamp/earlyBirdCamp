@@ -619,8 +619,9 @@
     },
     {
       "name": "junjunsoul",
-      "hp": 8,
+      "hp": 15,
       "articles": [
+        112,
         100,
         36
       ],
