@@ -551,8 +551,9 @@
     },
     {
       "name": "iShawnWang",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        117,
         47
       ],
       "joined_at": 1589118712347,
