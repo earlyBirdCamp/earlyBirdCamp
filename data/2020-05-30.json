@@ -497,8 +497,9 @@
     },
     {
       "name": "givingwu",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        114,
         37
       ],
       "joined_at": 1589118099235,
