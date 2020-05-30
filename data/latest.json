@@ -271,8 +271,9 @@
     },
     {
       "name": "leonway",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        115,
         58
       ],
       "joined_at": 1589114506739,
