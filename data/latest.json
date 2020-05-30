@@ -154,8 +154,9 @@
     },
     {
       "name": "xiaoxiangmoe",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        113,
         80
       ],
       "joined_at": 1589104970304,
