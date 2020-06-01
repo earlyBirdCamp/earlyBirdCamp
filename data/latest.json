@@ -1036,8 +1036,9 @@
     },
     {
       "name": "undefined-leetod",
-      "hp": 21,
+      "hp": 28,
       "articles": [
+        123,
         70
       ],
       "greatArticles": [],
