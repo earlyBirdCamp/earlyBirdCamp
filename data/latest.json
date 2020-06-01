@@ -235,10 +235,8 @@
     },
     {
       "name": "undefined-lee",
-      "hp": -1,
-      "articles": [
-        70
-      ],
+      "hp": -8,
+      "articles": [],
       "joined_at": 1589113289440,
       "greatArticles": [],
       "blocked_at": 1590884086726
@@ -1035,6 +1033,15 @@
       "articles": [],
       "greatArticles": [],
       "joined_at": 1590666777878
+    },
+    {
+      "name": "undefined-leetod",
+      "hp": 21,
+      "articles": [
+        70
+      ],
+      "greatArticles": [],
+      "joined_at": 1591000405387
     }
   ]
 }
