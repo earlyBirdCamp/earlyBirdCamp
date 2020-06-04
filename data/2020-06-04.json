@@ -1041,8 +1041,9 @@
     },
     {
       "name": "undefined-leetod",
-      "hp": 25,
+      "hp": 32,
       "articles": [
+        129,
         123,
         70
       ],
