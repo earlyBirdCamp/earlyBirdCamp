@@ -258,8 +258,9 @@
     },
     {
       "name": "3crazyspecial",
-      "hp": 2,
+      "hp": 9,
       "articles": [
+        135,
         94,
         35
       ],
@@ -1077,6 +1078,13 @@
       "articles": [],
       "greatArticles": [],
       "joined_at": 1591327393934
+    },
+    {
+      "name": "hychaoxxx",
+      "hp": 14,
+      "articles": [],
+      "greatArticles": [],
+      "joined_at": 1591339984239
     }
   ]
 }
