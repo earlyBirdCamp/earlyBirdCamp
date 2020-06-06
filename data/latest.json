@@ -344,8 +344,9 @@
     },
     {
       "name": "icodytan",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        140,
         111,
         73
       ],
