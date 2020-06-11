@@ -96,8 +96,9 @@
     },
     {
       "name": "ShawDanon",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        150,
         122,
         99,
         65
