@@ -522,8 +522,10 @@
     },
     {
       "name": "uploy",
-      "hp": -19,
-      "articles": [],
+      "hp": -12,
+      "articles": [
+        10
+      ],
       "joined_at": 1589117493546,
       "greatArticles": [],
       "blocked_at": 1590884086726
