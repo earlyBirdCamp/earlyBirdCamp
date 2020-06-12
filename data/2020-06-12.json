@@ -213,8 +213,9 @@
     },
     {
       "name": "LukerSpringtree",
-      "hp": 2,
+      "hp": 9,
       "articles": [
+        154,
         83,
         24
       ],
