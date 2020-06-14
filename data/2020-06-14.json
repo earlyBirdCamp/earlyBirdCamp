@@ -1142,8 +1142,9 @@
     },
     {
       "name": "AlienZhaolin",
-      "hp": 16,
+      "hp": 23,
       "articles": [
+        158,
         146
       ],
       "greatArticles": [],
