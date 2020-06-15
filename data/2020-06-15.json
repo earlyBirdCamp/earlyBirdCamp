@@ -1042,8 +1042,9 @@
     },
     {
       "name": "xiaoxiabaobei",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        161,
         134
       ],
       "greatArticles": [],
