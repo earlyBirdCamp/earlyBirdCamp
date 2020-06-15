@@ -110,8 +110,9 @@
     },
     {
       "name": "xiaohuoni",
-      "hp": 5,
+      "hp": 12,
       "articles": [
+        160,
         105,
         95,
         69,
