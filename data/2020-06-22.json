@@ -1188,8 +1188,11 @@
     },
     {
       "name": "likeDoMine",
-      "hp": 11,
+      "hp": 32,
       "articles": [
+        176,
+        175,
+        174,
         173
       ],
       "greatArticles": [],
