@@ -1188,13 +1188,8 @@
     },
     {
       "name": "likeDoMine",
-      "hp": 32,
-      "articles": [
-        176,
-        175,
-        174,
-        173
-      ],
+      "hp": 4,
+      "articles": [],
       "greatArticles": [],
       "joined_at": 1591931578300
     },
@@ -1220,6 +1215,18 @@
       ],
       "greatArticles": [],
       "joined_at": 1592617990858
+    },
+    {
+      "name": "lambGirl",
+      "hp": 42,
+      "articles": [
+        176,
+        175,
+        174,
+        173
+      ],
+      "greatArticles": [],
+      "joined_at": 1592799190258
     }
   ]
 }
