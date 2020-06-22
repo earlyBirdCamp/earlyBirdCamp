@@ -1188,8 +1188,10 @@
     },
     {
       "name": "likeDoMine",
-      "hp": 4,
-      "articles": [],
+      "hp": 11,
+      "articles": [
+        173
+      ],
       "greatArticles": [],
       "joined_at": 1591931578300
     },
