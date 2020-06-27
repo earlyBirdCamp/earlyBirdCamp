@@ -287,8 +287,9 @@
     },
     {
       "name": "3crazyspecial",
-      "hp": 1,
+      "hp": 8,
       "articles": [
+        187,
         168,
         153,
         135,
